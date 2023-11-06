@@ -21,7 +21,7 @@ metadata:
     backstage.io/kubernetes-namespace: suxess-it-qa
     backstage.io/techdocs-ref: dir:.
     grafana/dashboard-selector: "(tags @> '4GoldenSignals')"
-    grafana/overview-dashboard: "https://grafana.apps.cluster1.mcp.pitagora.at/d/KRlE7mE4z/4-golden-signals-sx-cnp?orgId=1&refresh=5s&var-namespace=suxess-it-qa&var-workload=test2&var-service=test2"
+    grafana/overview-dashboard: 'https://grafana.apps.cluster1.mcp.pitagora.at/d/KRlE7mE4z/4-golden-signals-sx-cnp?orgId=1&refresh=5s&var-namespace=suxess-it-qa&var-workload=test2&var-service=test2'
 spec:
   type: service
   lifecycle: experimental
