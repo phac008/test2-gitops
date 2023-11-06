@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: test2-ingress
+  namespace: suxess-it-qa
+  labels:
+    app: test2
+    backstage.io/kubernetes-id: test2
+spec:
+  ingressClassName: openshift-default
+  rules:
+  - host: test2-suxess-it-qa.apps.cluster1.mcp.pitagora.at
+    http:
+      paths:
+      - backend:
+          service:
+            name: test2
+            port:
+              number: 8080
+        path: /
+        pathType: Prefix

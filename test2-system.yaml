@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test2
+  description: test2
+  labels:
+    environments: qa
+spec:
+  owner: user:default/philipp.achmueller
